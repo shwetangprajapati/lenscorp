@@ -55,7 +55,7 @@ const AboutHero = () => {
                                 <p className="relative mt-6 text-lg leading-8 text-black sm:max-w-md lg:max-w-none">
                                     We put our hearts, souls and sweat into designing and
                                     developing custom AI - powered solutions for your business so
-                                    you don't have to.
+                                    you don&apos;t have to.
                                 </p>
                             </div>
                             <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -90,6 +90,7 @@ const AboutHero = () => {
                                             height={512}
                                             src="https://lenscorp.ai/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdetwrhe0k%2Fimage%2Fupload%2Fv1712048048%2Flenscorp-website%2Fimage_123650291_k27zul.jpg&w=384&q=75"
                                             className="aspect-[2/3]  rounded-xl bg-black/5 object-cover shadow-lg"
+                                            alt="team member"
                                         />
                                         <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-black/10" />
                                     </div>
