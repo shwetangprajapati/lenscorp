@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useTransition } from 'react';
-import { DownArrow } from "@/lib/SVGs";
 import { faqsData } from "@/lib/constants";
 import GradientHeading from '../gradientHeading/GradientHeading';
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const Faq = () => {
     const [selectedFaq, setSelectedFaq] = useState(0);
@@ -26,7 +26,7 @@ const Faq = () => {
                             <div key={item.id}>
                                 <div className="flex items-center justify-between cursor-pointer rounded-lg bg-white p-4  border border-black" onClick={() => toggleItem(item.id)}>
                                     <h2>{item.question}</h2>
-                                    <DownArrow />
+                                    <ChevronDownIcon className="h-8 w-8" aria-hidden="true" />
                                 </div>
                                 {selectedFaq === item.id && <p className="mt-2 leading-relaxed text-gray-700">{item.answer}</p>}
                             </div>

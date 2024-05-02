@@ -1,7 +1,7 @@
 import NumberCard from "@/components/about/NumberCard";
 import { aboutdata, blogsnumber } from "@/lib/constants";
 import React from "react";
-import AboutHero from "./AboutHero";
+import AboutHero from "../../components/about/AboutHero";
 
 const About = () => {
     return (
