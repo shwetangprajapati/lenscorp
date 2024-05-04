@@ -23,19 +23,19 @@ const AboutHome = () => {
                     <div className="mt-6 md:mt-10">
 
                         <Link
-                            class="group relative inline-flex items-center overflow-hidden rounded-lg bg-transparent border border-black px-6 py-3 text-black hover:bg-black hover:text-white focus:outline-none "
+                            className="group relative inline-flex items-center overflow-hidden rounded-lg bg-transparent border border-black px-6 py-3 text-black hover:bg-black hover:text-white focus:outline-none "
                             href="/about"
                         >
-                            <span class="absolute -end-full transition-all group-hover:end-4">
+                            <span className="absolute -end-full transition-all group-hover:end-4">
                                 <ButtonArrow />
                             </span>
 
-                            <span class=" font-medium transition-all group-hover:me-4">
+                            <span className=" font-medium transition-all group-hover:me-4">
                                 Learn More
                             </span>
                         </Link>
                     </div>
-                </div>
+                </div >
                 <div className="p-4 w-full  flex justify-center">
                     <img
                         alt="about us"
@@ -43,9 +43,9 @@ const AboutHome = () => {
                         className="w-full md:h-[395px] h-[232px]  object-cover rounded-lg p-2 hover:p-0 bg-white duration-300 transition ease-in-out delay-150 hover:-translate-y-1"
                     />
                 </div>
-            </div>
+            </div >
 
-        </div>
+        </div >
     );
 };
 

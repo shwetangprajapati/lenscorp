@@ -6,7 +6,7 @@ import React from "react";
 const TruAI = () => {
     return (
         <>
-            <div className="flex items-center justify-between bg-[#272e5c] text-white">
+            <div className="flex items-center justify-between bg-[#272e5c] text-white py-24">
                 <div className="hidden lg:block">
                     <Image
                         src="https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FvectorAi.8ec84e23.png&w=384&q=75"
@@ -30,24 +30,24 @@ const TruAI = () => {
                     </div>
 
                     <Link
-                        class="group relative px-6 py-3 my-4 inline-flex items-center overflow-hidden rounded-lg bg-transparent border border-white text-white hover:bg-white hover:text-black focus:outline-none "
+                        className="group relative px-6 py-3 my-4 inline-flex items-center overflow-hidden rounded-lg bg-transparent border border-white text-white hover:bg-white hover:text-black focus:outline-none "
                         href="/about"
                     >
-                        <span class="absolute -end-full transition-all group-hover:end-4">
+                        <span className="absolute -end-full transition-all group-hover:end-4">
                             <ButtonArrow />
                         </span>
 
-                        <span class=" font-medium transition-all group-hover:me-4">
+                        <span className=" font-medium transition-all group-hover:me-4">
                             Learn More
                         </span>
-                    </Link>
-                </div>
+                    </Link >
+                </div >
                 <div className="hidden md:block">
                     <video
                         width="454"
                         height="255"
                         className="rounded-l-full"
-                        autoplay="autoplay"
+                        autoPlay="autoplay"
                         muted
                         loop
                     >
@@ -57,7 +57,7 @@ const TruAI = () => {
                         />
                     </video>
                 </div>
-            </div>
+            </div >
         </>
     );
 };

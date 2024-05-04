@@ -8,6 +8,7 @@ const TruAI = dynamic(() => import("@/components/truai/TruAI"))
 const OurClients = dynamic(() => import("@/components/clients/OurClients"))
 const Services = dynamic(() => import("@/components/services/Services"))
 const AboutHome = dynamic(() => import('@/components/about/AboutHome'))
+const Vision = dynamic(() => import('@/components/vision/Vision'))
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Services />
       <TruAI />
       <ChooseLens />
+      <Vision />
       <OurClients />
       <Stats />
       <Faq />

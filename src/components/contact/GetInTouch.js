@@ -3,7 +3,7 @@ import React from 'react'
 const GetInTouch = () => {
     return (
         <>
-            <section className="overflow-hidden sm:grid sm:grid-cols-2 ">
+            <section className="overflow-hidden sm:grid sm:grid-cols-2 pb-24">
                 <div className="px-4 py-16  lg:px-24 lg:py-24 ">
                     <div className="mx-auto max-w-xl text-start">
                         <h2 className="text-6xl font-semibold text-black nunito_sans">
