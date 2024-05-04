@@ -110,3 +110,68 @@ export const aboutdata = [
             "We offer services for automated generation of 3D assets with realistic shapes and textures. We animate the 3D models with voice and videos with an aim to retarget voice and/or expressions with pose from a single Image/video.",
     },
 ];
+
+export const ServiceData = [
+    {
+        id: 1, title: "Biometrics", desc: "Academia-backed & In-house researched State-of-the-Art Face, Fingerprint, and Iris Recognition SDKs. Enable real-time automated Biometric applications on edge devices even without an active internet connection."
+    },
+    {
+        id: 2, title: "Image Analysis", desc: "Outsource the overly complex image analysis work to our intelligent machines that adaptively learn, so you can focus on making the best decisions for your business."
+    },
+    {
+        id: 3, title: "Cross-Media Translation", desc: "Will something like Siri or Alexa enhance your business? We can deliver text-to-speech, text-to-image, speech-to-text, speech-to-image, speech-to-image, image-to-text and image-to-speech solutions for maximum convenience."
+    },
+    {
+        id: 4, title: "3D Modelling and Design.", desc: "We offer services for automated generation of 3D assets with realistic shapes and textures. We animate the 3D models with voice and videos with an aim to retarget voice and/or expressions with pose from a single Image/video."
+    },
+];
+
+export const clientsData = [
+    {
+        src: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCo_1.ad2ee302.png&w=256&q=75",
+    },
+    {
+        src: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCo_3.37f82c98.png&w=256&q=75",
+    },
+    {
+        src: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCo_2.7e06895b.png&w=256&q=75",
+    },
+    {
+        src: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgrov.97a72987.png&w=128&q=75",
+    }
+];
+
+export const features = [
+    "State-of-the-art solutions",
+    "Lifetime support & upgrades",
+    "Fast & Efficient",
+    "Plug-and-Play",
+    "No extra computation fee",
+    "24x7 Progress Monitoring",
+    "No licensing fee",
+    "Incremental Updates"
+];
+
+export const chooseLensData = [
+    {
+        id: 1, title: "Exclusive Rights", img: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgreen.e71c8735.png&w=256&q=75", desc: "Our mission is to make an impact in empowering human society with AI. Hence, all Intellectual Property Rights belongs to you."
+    },
+    {
+        id: 2, title: "Research Driven", img: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblue.f22859fe.png&w=256&q=75", desc: "We regularly benchmark our solutions via comparing industry-vide evaluations so our partners only get the best that AI can offer."
+    },
+    {
+        id: 3, title: "Plug-and-Play", img: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fred.a7efdb29.png&w=128&q=75", desc: "We provide AI-driven solutions into businesses where they can bring tangible value. Each solution is customized as per your needs and deployed on any computing device of your choice."
+    },
+    {
+        id: 4, title: "Lifetime Support", img: "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fyellow.d937d179.png&w=256&q=75", desc: "Should you face any issues, we are always at your service. We provide lifetime technical support & upgrade options."
+    },
+];
+
+export const team = [
+    {
+        name: 'Michael Foster',
+        role: 'Co-Founder / CTO',
+        imageUrl:
+            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    },
+]

@@ -1,28 +1,23 @@
 import NumberCard from "@/components/about/NumberCard";
-import { aboutdata, blogsnumber } from "@/lib/constants";
+import { ServiceData, aboutdata } from "@/lib/constants";
 import React from "react";
 import AboutHero from "../../components/about/AboutHero";
+import ServicesCard from "@/components/services/ServicesCard";
+import OurTeam from "@/components/about/OurTeam";
 
 const About = () => {
     return (
         <div className="pt-24 ">
             <AboutHero />
-            <div className="bg-gradient-to-r from-[#0091FF] to-[#9CFEFF] my-24">
-                <section className="text-white body-font max-w-7xl mx-auto">
-                    <div className="container px-5 py-24 mx-auto ">
-                        <div className="flex flex-wrap -mx-4 -my-8 justify-center">
-                            {aboutdata.map((item) => (
-                                <NumberCard
-                                    key={item.id}
-                                    title={item.title}
-                                    description={item.description}
-                                    id={item.id}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                </section>
+            <div className="flex justify-center  py-12" >
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">
+                    {ServiceData.map((item) => (
+                        <ServicesCard key={item.id} index={item.id} item={item} />
+                    ))}
+                </div>
             </div>
+
+            <OurTeam/>
         </div>
     );
 };

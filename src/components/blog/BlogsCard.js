@@ -7,11 +7,11 @@ const BlogsCard = () => {
     return (
         <>
             <section
-                className=" overflow-hidden bg-cover bg-no-repeat pt-24"
+                className=" overflow-hidden bg-cover bg-top bg-no-repeat pt-24"
                 style={{ backgroundImage: 'url(https://lenscorp.ai/_next/static/media/Gradient_bg_section4.71fb66b2.jpg)' }}>
 
                 <GradientHeading
-                    title="Blogs"
+                    title="BLOGS"
                     size="text-6xl"
                 />
 

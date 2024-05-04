@@ -16,7 +16,6 @@
         scrollbar-width: auto;
     }
 
-    /* Define gradient background for scrollbar */
     *::-webkit-scrollbar {
         width: 6px;
         background: linear-gradient(to right, #0091FF, #9CFEFF);
@@ -33,3 +32,30 @@
             height: 2px;
     }
 }
+.truai {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-gradient-from: #9747ff;
+    --tw-gradient-from-position: 0%;
+    --tw-gradient-via: #2f80ed;
+    --tw-gradient-via-position: 50%;
+    --tw-gradient-to: #ee216b;
+    --tw-gradient-to-position: 100%;
+    --tw-gradient-stops: var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    text-transform: capitalize;
+    animation: TruAi_background-pan__wS4NA 2s linear infinite;
+}
+
+@keyframes TruAi_background-pan__wS4NA {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
