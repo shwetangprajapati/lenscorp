@@ -17,6 +17,13 @@ module.exports = {
         'nunito_sans': ['var(--font-nunito_sans)'],
         'poppins': 'var(--font-poppins)',
       },
+      colors: {
+        'sky': '#dbeafe',
+        'customlight':'#1b1c1e',
+        'darkblue': '#272e5c',
+        'darksky':'#0091FF',
+        'darkcyan':'#9CFEFF'
+      },
     },
   },
 

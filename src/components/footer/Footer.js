@@ -56,12 +56,12 @@ const Footer = () => {
                 ))}
             </div>
 
-            <div className={`md:flex items-center justify-between ${currentTheme === "dark" ? "bg-[#1b1c1e]" : "bg-[#272e5c]"}  py-8  sm:px-24`}>
+            <div className={`md:flex items-center justify-between  dark:bg-customlight  bg-darkblue py-8  sm:px-24`}>
                 <div className="text-gray-500">
                     2023 <span className="text-white">LENS, Inc.</span> All rights
                     reserved.
                 </div>
-                <div className="sm:flex items-center pt-4">
+                <div className="sm:flex items-center pt-4 text-white">
                     {pdflinks.map((link, index) => (
                         <a
                             key={index}

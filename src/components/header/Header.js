@@ -40,8 +40,7 @@ export default function Header() {
                     }`}
             >
                 <nav
-                    className={`flex items-center justify-between ${currentTheme === "dark" ? "bg-black opacity-80" : "bg-white"
-                        } pt-4 pb-2  lg:px-24 px-4`}
+                    className={`flex items-center justify-between dark:bg-black bg-white dark:opacity-80 pt-4 pb-2  lg:px-24 px-4`}
                     aria-label="Global"
                 >
                     <Link href="/" className="-m-1.5 p-1.5">

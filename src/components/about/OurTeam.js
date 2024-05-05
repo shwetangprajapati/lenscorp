@@ -2,7 +2,7 @@ import GradientHeading from "../gradientHeading/GradientHeading";
 import Image from "next/image";
 
 const OurTeam = () => {
-    const cardsArray = Array.from({ length: 30 }, (v, i) => i);
+    const cardsArray = Array.from({ length: 16 }, (v, i) => i);
 
     return (
         <>

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React, { memo } from 'react'
 
-const ChooseLensCard = ({ title, img, desc, currentTheme }) => {
+const ChooseLensCard = ({ title, img, desc }) => {
     return (
-        <div className={`w-[320px] h-[435px]  ${currentTheme === "dark" ? "bg-[#1b1c1e]" : "bg-white"}  rounded-2xl p-6 text-center mx-auto mb-8 hover:border hover:border-rose-400 hover:bg-transparent`}>
+        <div className={`w-[320px] h-[435px] dark:bg-customlight  bg-white rounded-2xl p-6 text-center mx-auto mb-8 hover:border hover:border-rose-400 hover:bg-transparent`}>
             <h2 className='font-bold text-2xl mb-4'>{title}</h2>
             <div className="relative w-[138px] h-[138px] mx-auto mb-4  overflow-hidden animate-pulse hover:animate-none">
                 <Image

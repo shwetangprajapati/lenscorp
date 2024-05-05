@@ -7,14 +7,11 @@ const BlogsCard = () => {
     return (
         <>
             <section
-                className=" overflow-hidden bg-cover bg-top bg-no-repeat pt-24"
-                style={{ backgroundImage: 'url(https://lenscorp.ai/_next/static/media/Gradient_bg_section4.71fb66b2.jpg)' }}>
-
+                className=" overflow-hidden bg-cover bg-top bg-no-repeat pt-24 bg-[url(https://lenscorp.ai/_next/static/media/Gradient_bg_section4.71fb66b2.jpg)]">
                 <GradientHeading
                     title="BLOGS"
                     size="text-6xl"
                 />
-
 
                 {blogsnumber.map((item) => {
                     return <div key={item} className="text-black px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-8 border-2 border-[#ff5d5b] rounded-xl mb-24 mt-8 lg:w-[80%] lg:mx-auto mx-2 transform transition-transform duration-300 ease-in-out hover:scale-105">

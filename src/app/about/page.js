@@ -9,7 +9,7 @@ import useLight from "@/customhooks/useLight";
 const About = () => {
     const currentTheme=useLight()
     return (
-        <div className="pt-24 ">
+        <div className="pt-24 mb-24">
             <AboutHero />
             <div className="flex justify-center  py-12" >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">

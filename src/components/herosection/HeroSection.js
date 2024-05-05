@@ -4,12 +4,7 @@ const HeroSection = () => {
     return (
         <>
             <section
-                className="h-screen overflow-hidden bg-cover bg-top bg-no-repeat flex justify-center md:justify-normal items-center"
-                style={{
-                    backgroundImage:
-                        "url(https://lenscorp.ai/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdetwrhe0k%2Fimage%2Fupload%2Fv1691730929%2Flenscorp-website%2FDesktop_-_23_u3ypg0.jpg&w=128&q=75)",
-                }}
-            >
+                className="bg-[url(https://lenscorp.ai/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdetwrhe0k%2Fimage%2Fupload%2Fv1691730929%2Flenscorp-website%2FDesktop_-_23_u3ypg0.jpg&w=128&q=75)] h-screen overflow-hidden bg-cover bg-top bg-no-repeat flex justify-center md:justify-normal items-center">
                 <div className="p-8 lg:pl-80 lg:pb-8 md:text-left text-center ">
                     <h1 className="text-5xl lg:text-6xl font-semibold text-black nunito_sans">
                         We are at the <br /> forefront of AI

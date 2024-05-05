@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, memo } from "react";
 
-const ServicesCard = ({ index, item, currentTheme }) => {
+const ServicesCard = ({ index, item }) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
         <>
@@ -12,7 +12,7 @@ const ServicesCard = ({ index, item, currentTheme }) => {
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     <div
-                        className={`${currentTheme === "dark" ? "bg-[#1b1c1e]" : "bg-white"} lg:w-[470px] lg:h-[360px] h-auto p-4 sm:p-6 hover:bg-transparent ${isHovered ? `rounded-lg border border-rose-400` : ""}`}
+                        className={`dark:bg-customlight bg-white lg:w-[470px] lg:h-[360px] h-auto p-4 sm:p-6 hover:bg-transparent ${isHovered ? `rounded-lg border border-rose-400` : ""}`}
                     >
                         <div className="relative block text-6xl text-gray-400 pb-8 font-semibold">
                             0
