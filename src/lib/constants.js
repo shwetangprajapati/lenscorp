@@ -83,34 +83,6 @@ export const faqsData = [
 ];
 
 
-
-export const aboutdata = [
-    {
-        id: 1,
-        title: "Biometrics",
-        description:
-            "Academia-backed & In-house researched State-of-the-Art Face, Fingerprint, and Iris Recognition SDKs. Enable real-time automated Biometric applications on edge devices even without an active internet connection.",
-    },
-    {
-        id: 2,
-        title: "Image Analysis",
-        description:
-            "Academia-backed & In-house researched State-of-the-Art Face, Fingerprint, and Iris Recognition SDKs. Enable real-time automated Biometric applications on edge devices even without an active internet connection.",
-    },
-    {
-        id: 3,
-        title: "Cross-Media Translation",
-        description:
-            "Academia-backed & In-house researched State-of-the-Art Face, Fingerprint, and Iris Recognition SDKs. Enable real-time automated Biometric applications on edge devices even without an active internet connection.",
-    },
-    {
-        id: 4,
-        title: "3D Modelling and Design.",
-        description:
-            "We offer services for automated generation of 3D assets with realistic shapes and textures. We animate the 3D models with voice and videos with an aim to retarget voice and/or expressions with pose from a single Image/video.",
-    },
-];
-
 export const ServiceData = [
     {
         id: 1, title: "Biometrics", desc: "Academia-backed & In-house researched State-of-the-Art Face, Fingerprint, and Iris Recognition SDKs. Enable real-time automated Biometric applications on edge devices even without an active internet connection."
@@ -167,11 +139,3 @@ export const chooseLensData = [
     },
 ];
 
-export const team = [
-    {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    },
-]

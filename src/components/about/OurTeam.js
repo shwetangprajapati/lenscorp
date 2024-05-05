@@ -1,5 +1,3 @@
-import { team } from "@/lib/constants";
-import React from "react";
 import GradientHeading from "../gradientHeading/GradientHeading";
 import Image from "next/image";
 
@@ -28,10 +26,10 @@ const OurTeam = () => {
                                 width={320}
                                 height={426}
                             />
-                            <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-black">
+                            <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight ">
                                 Michael Foster
                             </h3>
-                            <p className="text-sm leading-6 text-black">Co-Founder / CTO</p>
+                            <p className="text-sm leading-6 ">Co-Founder / CTO</p>
                         </li>
                     ))}
                 </ul>

@@ -1,10 +1,13 @@
-import React from "react";
+"use client"
 import GradientHeading from "../gradientHeading/GradientHeading";
 import { ChecklistIcon } from "@/lib/SVGs";
 import { chooseLensData, features } from "@/lib/constants";
 import ChooseLensCard from "./ChooseLensCard";
+import useLight from "@/customhooks/useLight";
 
 const ChooseLens = () => {
+    const currentTheme = useLight();
+
     return (
         <>
             <GradientHeading title="WHY CHOOSE LENS" size="text-2xl" />
@@ -14,7 +17,7 @@ const ChooseLens = () => {
             <div
                 className="py-8 bg-cover bg-top bg-no-repeat"
                 style={{
-                    backgroundImage:
+                    backgroundImage: currentTheme==="dark"?"":
                         "url(https://lenscorp.ai/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdetwrhe0k%2Fimage%2Fupload%2Fv1691730929%2Flenscorp-website%2FDesktop_-_23_u3ypg0.jpg&w=128&q=75)",
                 }}
             >
@@ -43,6 +46,7 @@ const ChooseLens = () => {
                             title={lens.title}
                             img={lens.img}
                             desc={lens.desc}
+                            currentTheme={currentTheme}
                         />
                     ))}
                 </div>

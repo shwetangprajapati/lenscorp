@@ -1,9 +1,13 @@
+"use client"
+import useLight from "@/customhooks/useLight";
 import { blocksData } from "@/lib/constants";
 import React from "react";
+
 const Stats = () => {
+    const currentTheme = useLight();
 
     return (
-        <div className="bg-[#272e5c] p-16">
+        <div className={` px-16 py-24 ${currentTheme === "dark" ? "bg-[#1b1c1e]":"bg-[#272e5c]"}`} >
             <div>
                 <h2 className="text-center sm:text-4xl text-3xl text-white pb-16 text-nowrap">By the numbers</h2>
                 <div className="flex  justify-center sm:gap-24 gap-4">

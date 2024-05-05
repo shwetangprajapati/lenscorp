@@ -24,11 +24,11 @@ const Faq = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         {faqsData.map((item) => (
                             <div key={item.id}>
-                                <div className="flex items-center justify-between cursor-pointer rounded-lg bg-white p-4  border border-black" onClick={() => toggleItem(item.id)}>
+                                <div className="flex items-center justify-between cursor-pointer rounded-lg  p-4  border border-black" onClick={() => toggleItem(item.id)}>
                                     <h2>{item.question}</h2>
                                     <ChevronDownIcon className="h-8 w-8" aria-hidden="true" />
                                 </div>
-                                {selectedFaq === item.id && <p className="mt-2 leading-relaxed text-gray-700">{item.answer}</p>}
+                                {selectedFaq === item.id && <p className="mt-2 leading-relaxed text-gray-500">{item.answer}</p>}
                             </div>
                         ))}
                     </div>

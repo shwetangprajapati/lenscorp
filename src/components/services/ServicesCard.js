@@ -1,6 +1,7 @@
 "use client"
-import React, { useState } from "react";
-const ServicesCard = ({ index, item }) => {
+import React, { useState, memo } from "react";
+
+const ServicesCard = ({ index, item, currentTheme }) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
         <>
@@ -11,7 +12,7 @@ const ServicesCard = ({ index, item }) => {
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     <div
-                        className={`bg-white lg:w-[470px] lg:h-[360px] h-auto p-4 sm:p-6 hover:bg-transparent ${isHovered ? `rounded-lg border border-rose-400` : ""}`}
+                        className={`${currentTheme === "dark" ? "bg-[#1b1c1e]" : "bg-white"} lg:w-[470px] lg:h-[360px] h-auto p-4 sm:p-6 hover:bg-transparent ${isHovered ? `rounded-lg border border-rose-400` : ""}`}
                     >
                         <div className="relative block text-6xl text-gray-400 pb-8 font-semibold">
                             0
@@ -27,7 +28,7 @@ const ServicesCard = ({ index, item }) => {
                                 </span>
                             </span>
                         </div>
-                        <p className="mt-2 text-lg font-medium leading-8 text-gray-400">
+                        <p className="mt-2 text-lg font-medium leading-8 text-gray-500">
                             {item.desc}
                         </p>
                     </div>
@@ -36,5 +37,5 @@ const ServicesCard = ({ index, item }) => {
         </>
     )
 }
-export default ServicesCard
+export default memo(ServicesCard)
 

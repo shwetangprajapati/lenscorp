@@ -1,10 +1,12 @@
-import React from "react";
+"use client"
 import GradientHeading from "../gradientHeading/GradientHeading";
+import useLight from "@/customhooks/useLight";
 
 const Vision = () => {
+    const currentTheme = useLight();
 
     return (
-        <div className="bg-gray-100">
+        <div className={`${currentTheme === "dark" ? "" : "bg-gray-100"}`}>
             <GradientHeading title="OUR VISION" size="text-2xl" />
             <h2 className="text-center md:text-6xl text-4xl py-12">
                 AI for Social Good
@@ -27,7 +29,7 @@ const Vision = () => {
                             </h2 >
                         </div >
                         <div className="order-1  rounded-lg w-5/12 px-6 py-4" >
-                            <h3 className="mb-3 font-medium text-black text-xl md:text-4xl" > Diversity & Fairness</h3 >
+                            <h3 className="mb-3 font-medium  text-xl md:text-4xl" > Diversity & Fairness</h3 >
                             <p className="text-gray-400 leading-tight mt-8" > When training our AI models, we consider ethical and social implications of algorithm - based decision making.Our solutions use high - quality and fairly - represented data sets to eliminate human cognitive biases.</p >
                         </div >
                     </div >
@@ -39,7 +41,7 @@ const Vision = () => {
                             </h2 >
                         </div >
                         <div className="order-1  rounded-lg w-5/12 px-6 py-4" >
-                            <h3 className="mb-3 font-medium text-black text-xl md:text-4xl" > Regulatory Compliance</h3 >
+                            <h3 className="mb-3 font-medium  text-xl md:text-4xl" > Regulatory Compliance</h3 >
                             <p className="text-gray-400 leading-tight mt-8" > Working with clients globally, LENS acknowledges applicable data privacy regulations, such as the GDPR, HIPAA and others, in all our solutions handling sensitive data.We also ensure our algorithms allow for the required level of decision - making transparency and explainability.</p >
                         </div >
                     </div >
@@ -51,7 +53,7 @@ const Vision = () => {
                             </h2 >
                         </div >
                         <div className="order-1  rounded-lg w-5/12 px-6 py-4" >
-                            <h3 className="mb-3 font-medium text-black text-xl md:text-4xl" > Code of Ethics</h3 >
+                            <h3 className="mb-3 font-medium  text-xl md:text-4xl" > Code of Ethics</h3 >
                             <p className="text-gray-400 leading-tight mt-8" > LENS believes in a just, non - violent world of equality and fairness.We prize democratic values, civil liberties and open and informed debate.When used to further these values, algorithm - based decision - making models can continue to make the world a safer, better place for everyone.</p >
                         </div >
                     </div >

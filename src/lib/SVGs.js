@@ -89,7 +89,6 @@ export const ChecklistIcon = () => {
             fill="currentColor"
             strokeWidth="0"
             viewBox="0 0 16 16"
-            className="NewSolutions_check__YG5PZ"
             height="1em"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -99,18 +98,17 @@ export const ChecklistIcon = () => {
     );
 };
 
-export const LightIcon = () => {
+export const LightIcon = ({ color }) => {
     return (
         <>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
                 role="img"
-                className="switch iconify iconify--ic"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                style={{ color: "black" }}
+                style={{ color: color }}
             >
                 <path
                     fill="currentColor"

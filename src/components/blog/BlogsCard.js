@@ -17,7 +17,7 @@ const BlogsCard = () => {
 
 
                 {blogsnumber.map((item) => {
-                    return <div key={item} className=" px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-8 border-2 border-[#ff5d5b] rounded-xl mb-24 mt-8 lg:w-[80%] lg:mx-auto mx-2 transform transition-transform duration-300 ease-in-out hover:scale-105">
+                    return <div key={item} className="text-black px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-8 border-2 border-[#ff5d5b] rounded-xl mb-24 mt-8 lg:w-[80%] lg:mx-auto mx-2 transform transition-transform duration-300 ease-in-out hover:scale-105">
                         <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 ">
                             <div>
                                 <Image
@@ -25,12 +25,13 @@ const BlogsCard = () => {
                                     width={472}
                                     height={456}
                                     src="https://lenscorp.ai/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdetwrhe0k%2Fimage%2Fupload%2Fv1714047525%2Flenscorp-website%2Fquahackxjl6x7eojkcuv.jpg&w=640&q=75"
-                                    className=" inset-0  object-cover rounded-lg"
+                                    className=" inset-0  object-cover rounded-lg "
+                                    priority
                                 />
                             </div>
                             <div >
-                                <div className='text-[#ff5d5b] font-bold pb-4'>Artificial intelligence</div>
-                                <h2 className="text-3xl font-medium sm:text-4xl">The AI Revolution In Supply Chain Management
+                                <div className='text-[#ff5d5b] font-bold pb-4 '>Artificial intelligence</div>
+                                <h2 className="text-3xl font-medium sm:text-4xl ">The AI Revolution In Supply Chain Management
                                 </h2>
                                 <div className='flex items-center gap-2 my-6'>
                                     <div>

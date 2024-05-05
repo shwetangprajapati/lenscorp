@@ -6,21 +6,33 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { navigation } from "@/lib/constants";
 import Link from "next/link";
+import { DarkIcon, LightIcon } from "@/lib/SVGs";
+import { useTheme } from "next-themes";
 
 export default function Header() {
+    const { systemTheme, theme, setTheme } = useTheme();
     const pathName = usePathname();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+
+    const [mounted, setMounted] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.scrollY;
             setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
             setPrevScrollPos(currentScrollPos);
         };
+        setMounted(true);
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [prevScrollPos]);
+
+    if (!mounted) return null;
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
     return (
         <>
             <header
@@ -28,16 +40,22 @@ export default function Header() {
                     }`}
             >
                 <nav
-                    className=" flex items-center justify-between pt-4 pb-2 bg-white lg:px-24 px-4"
+                    className={`flex items-center justify-between ${currentTheme === "dark" ? "bg-black opacity-80" : "bg-white"
+                        } pt-4 pb-2  lg:px-24 px-4`}
                     aria-label="Global"
                 >
                     <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <Image
-                            src="https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnav_logo.e5fb945a.png&w=96&q=75"
                             alt="logo"
                             width={80}
                             height={70}
+                            sizes="auto"
+                            src={
+                                currentTheme === "dark"
+                                    ? "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FnewLogo.9985891c.png&w=96&q=75"
+                                    : "https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnav_logo.e5fb945a.png&w=96&q=75"
+                            }
                         />
                     </Link>
                     <button
@@ -62,6 +80,16 @@ export default function Header() {
                                 <span>{item.name}</span>
                             </Link>
                         ))}
+
+                        {currentTheme === "dark" ? (
+                            <button onClick={() => setTheme("light")}>
+                                <DarkIcon />
+                            </button>
+                        ) : (
+                            <button onClick={() => setTheme("dark")}>
+                                <LightIcon />
+                            </button>
+                        )}
                     </div>
                 </nav>
                 <Dialog
@@ -89,7 +117,6 @@ export default function Header() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            // className="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                                             onClick={() => setMobileMenuOpen(false)}
                                             className={
                                                 pathName === item.href
@@ -100,6 +127,27 @@ export default function Header() {
                                             {item.name}
                                         </Link>
                                     ))}
+                                    {currentTheme === "dark" ? (
+                                        <button
+                                            className="px-3 py-2"
+                                            onClick={() => {
+                                                setTheme("light");
+                                                setMobileMenuOpen(false);
+                                            }}
+                                        >
+                                            <DarkIcon />
+                                        </button>
+                                    ) : (
+                                        <button
+                                            className="px-3 py-2"
+                                            onClick={() => {
+                                                setTheme("dark");
+                                                setMobileMenuOpen(false);
+                                            }}
+                                        >
+                                            <LightIcon color="white" />
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>

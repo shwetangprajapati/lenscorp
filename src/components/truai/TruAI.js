@@ -1,12 +1,16 @@
+"use client"
+import useLight from "@/customhooks/useLight";
 import { ButtonArrow } from "@/lib/SVGs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const TruAI = () => {
+    const currentTheme = useLight();
+
     return (
         <>
-            <div className="flex items-center justify-between bg-[#272e5c] text-white py-24">
+            <div className={`flex items-center justify-between  text-white ${currentTheme === "dark" ?"bg-[#1b1c1e]":"bg-[#272e5c]"} py-24`}>
                 <div className="hidden lg:block">
                     <Image
                         src="https://lenscorp.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FvectorAi.8ec84e23.png&w=384&q=75"

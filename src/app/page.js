@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import HeroSection from "@/components/herosection/HeroSection";
+import HeroView from '@/components/herosection/HeroView';
 const Stats = dynamic(() => import("@/components/stats/Stats"))
 const Faq = dynamic(() => import("@/components/faq/Faq"))
 const GetInTouch = dynamic(() => import("@/components/contact/GetInTouch"))
@@ -14,7 +14,7 @@ const Vision = dynamic(() => import('@/components/vision/Vision'))
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroView />
       <AboutHome />
       <Services />
       <TruAI />

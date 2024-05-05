@@ -1,22 +1,26 @@
+"use client";
 import { ButtonArrow } from "@/lib/SVGs";
 import Link from "next/link";
 import React from "react";
 import GradientHeading from "../gradientHeading/GradientHeading";
+import useLight from "@/customhooks/useLight";
 
 const AboutHome = () => {
+
+    const currentTheme = useLight();
     return (
-        <div className="bg-white md:w-[80%] mx-auto px-4 py-12 md:py-16 ">
+        <div className=" md:w-[80%] mx-auto px-4 py-12 md:py-16 ">
 
             <GradientHeading
                 title="ABOUT US"
                 size="text-6xl"
             />
-            <div className="p-8 flex items-center justify-between flex-col-reverse gap-0 lg:gap-10	lg:flex-row bg-blue-100 rounded-xl hover:-translate-y-1 hover:scale-110 duration-300 transition ease-in-out delay-150 mt-8">
+            <div className={` ${currentTheme === 'dark' ? "bg-[#1b1c1e]" : "bg-blue-100"} p-8 flex items-center justify-between flex-col-reverse gap-0 lg:gap-10	lg:flex-row  rounded-xl hover:-translate-y-1 hover:scale-110 duration-300 transition ease-in-out delay-150 mt-8`}>
                 <div className="p-4 w-full text-center lg:text-start">
-                    <h2 className="text-4xl lg:text-5xl font-medium text-black">
+                    <h2 className="text-4xl lg:text-5xl font-medium ">
                         Welcome To LENS
                     </h2>
-                    <p className="text-gray-500 mt-4 md:mt-8 text-sm md:text-base leading-6">
+                    <p className="text-gray-500 font-medium mt-4 md:mt-8 text-sm md:text-base leading-6">
                         We put our hearts, souls, and sweat into designing and developing
                         custom AI-powered solutions for your business so you don&apos;t have to.
                     </p>

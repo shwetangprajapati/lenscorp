@@ -49,10 +49,10 @@ const AboutHero = () => {
                     <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
                         <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                             <div className="w-full max-w-xl lg:shrink-0 ">
-                                <h1 className="text-4xl font-medium tracking-tight text-black nunito_sans sm:text-6xl">
+                                <h1 className="text-4xl font-medium tracking-tight  nunito_sans sm:text-6xl">
                                     Welcome To LENS
                                 </h1>
-                                <p className="relative mt-6 text-lg leading-8 text-black sm:max-w-md lg:max-w-none">
+                                <p className="relative mt-6 text-lg leading-8 sm:max-w-md lg:max-w-none">
                                     We put our hearts, souls and sweat into designing and
                                     developing custom AI - powered solutions for your business so
                                     you don&apos;t have to.

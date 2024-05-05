@@ -2,9 +2,10 @@ import { clientsData } from "@/lib/constants";
 import Image from "next/image";
 
 const OurClients = () => {
+
     return (
-        <div className="py-16 bg-white">
-            <h2 className="text-center text-black text-4xl font-semibold pb-24 nunito_sans">
+        <div className="py-16">
+            <h2 className="text-center  text-4xl font-semibold pb-24 nunito_sans">
                 We Work With Amazing Clients
             </h2>
             <marquee scrollamount="20">
@@ -16,6 +17,7 @@ const OurClients = () => {
                                 width={192}
                                 height={128}
                                 alt="our clients"
+                                className={`text-transparent`}
                             />
                         </div>
                     ))}
